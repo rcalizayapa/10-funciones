@@ -10,6 +10,7 @@ float saldo = 0; // Variable global
 int main(){
     int op;
     float valor;
+    
     do{
     cout<<"Cajero automatico"<<endl;
     cout<<"1. Depositar"<<endl;
@@ -27,9 +28,10 @@ int main(){
         case 0:
             cout<<"Saliendo..."<<endl;
             //system("pause");
-        break;
-    }
-    }
+            break;
+        }
+    }while(op!=0);
+
     return 0;
 }
 void depositar(float monto){
@@ -37,7 +39,7 @@ void depositar(float monto){
 }
 
 void retirar(float monto){
-    saldo = saldo + monto;
+    saldo = saldo - monto;
 }
 
 void mostrarSaldo(){
