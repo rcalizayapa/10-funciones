@@ -29,12 +29,14 @@ int main(){
         retirar(valor);
         break;
         case 3:
-        cout<<"Mostrar saldo: ";cin>>valor;
+        mostrarSaldo();
         break;
         case 0:
             cout<<"Saliendo..."<<endl;
             //system("pause");
             break;
+            default:
+                cout<<"opcion invalida. Intente nuevamente"<<endl;
         }
     }while(op!=0);
 
